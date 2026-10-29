@@ -7,7 +7,7 @@
 ### 结果 | Result
 
 <img width="1189" height="490" alt="image" src="https://github.com/user-attachments/assets/e6234335-3448-45e4-b61d-3fcbec00cd5f" />
-
+我们的结果是过拟合的，因为这个数据集很小，但我们的结构很复杂，当模型足够大的时候，BERT模型回越来越好。
 ---
 
 ## 简介
@@ -30,6 +30,8 @@ Bidirectional Encoder Representations from Transformers（简称BERT）由 **Jac
 - **预训练任务头**：包含两个预训练输出头：掩码语言模型（MLM）头用于预测被掩码位置的原始token，输出层与词嵌入层权重共享以压缩参数量；下一句预测（NSP）头基于CLS表征进行二分类，判断两句话是否为连续上下文。两个任务联合训练，让模型同时掌握词级与句子级的语义理解能力。
 - **下游任务适配**：预训练完成后，移除预训练任务头，根据具体下游任务接入对应的输出层。文本分类任务基于CLS池化表征接入线性分类头，通过交叉熵损失进行端到端微调。
 
+<img width="1629" height="894" alt="image" src="https://github.com/user-attachments/assets/0a07453f-0cea-42c7-aa98-f20ea43d8d3f" />
+<img width="1566" height="542" alt="image" src="https://github.com/user-attachments/assets/84f51cdb-90f9-49ae-87ca-13b894630de1" />
 
 
 **具体网络细节**可以查看我的这篇文章：[BERT 深入浅出]()
