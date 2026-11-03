@@ -34,7 +34,7 @@ Bidirectional Encoder Representations from Transformers（简称BERT）由 **Jac
 <img width="1566" height="542" alt="image" src="https://github.com/user-attachments/assets/84f51cdb-90f9-49ae-87ca-13b894630de1" />
 
 
-**具体网络细节**可以查看我的这篇文章：[BERT 深入浅出]()
+**具体网络细节**可以查看我的这篇文章：[BERT 深入浅出](https://blog.csdn.net/Eric005/article/details/169259116?fromshare=blogdetail&sharetype=blogdetail&sharerId=169259116&sharerefer=PC&sharesource=Eric005&sharefrom=from_link)
 
 **注意**：为降低训练开销、便于快速复现验证，本实现采用轻量化 Mini-BERT 配置（4层堆叠、256维隐藏特征、4头注意力），数据集使用小型电影评论情感分类语料，但模型结构、注意力机制、嵌入设计、训练范式均严格对齐原论文标准。
 
